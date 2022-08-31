@@ -1,0 +1,14 @@
+D:\Мої роботи кодингу\Imitation\bin\Debug\netcoreapp3.1\Imitation.exe
+D:\Мої роботи кодингу\Imitation\bin\Debug\netcoreapp3.1\Imitation.deps.json
+D:\Мої роботи кодингу\Imitation\bin\Debug\netcoreapp3.1\Imitation.runtimeconfig.json
+D:\Мої роботи кодингу\Imitation\bin\Debug\netcoreapp3.1\Imitation.runtimeconfig.dev.json
+D:\Мої роботи кодингу\Imitation\bin\Debug\netcoreapp3.1\Imitation.dll
+D:\Мої роботи кодингу\Imitation\bin\Debug\netcoreapp3.1\Imitation.pdb
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.csproj.AssemblyReference.cache
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.GeneratedMSBuildEditorConfig.editorconfig
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.AssemblyInfoInputs.cache
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.AssemblyInfo.cs
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.csproj.CoreCompileInputs.cache
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.dll
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.pdb
+D:\Мої роботи кодингу\Imitation\obj\Debug\netcoreapp3.1\Imitation.genruntimeconfig.cache
