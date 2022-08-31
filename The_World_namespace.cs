@@ -56,3 +56,27 @@ namespace Structure_Classes_Properties
         }
     }
 
+    namespace Ukraine
+    {
+        class Kyiv
+        {
+            public static int population = 2884000;
+
+        }
+    }
+    namespace USA
+    {
+        class Washington
+        {
+            public static int population = 701974;
+
+        }
+    }
+    namespace Japan
+    {
+        class Tokio
+        {
+            public static int population = 13960000;
+        }
+    }
+}
