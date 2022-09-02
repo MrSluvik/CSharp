@@ -2,7 +2,7 @@
 
 namespace Imitation
 {    
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
@@ -18,7 +18,8 @@ namespace Imitation
             {
                 Console.WriteLine($"У вас не вистачає коштів навіть зі знижкою");
             }
-            
+
+            Program.Main2();
         }
     }
 }
