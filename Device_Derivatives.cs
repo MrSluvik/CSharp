@@ -82,7 +82,7 @@ namespace Imitation
             this.power_Levels = power_Levels;
         }
         public override void Sound()
-        { Console.WriteLine("Beep"); }
+        { Console.WriteLine("Guuuuuuuuuuu-uuuuuu"); }
         public override void Show()
         { Console.WriteLine($"A Microwave {brend}"); }
         public override void Desc()
@@ -98,7 +98,7 @@ namespace Imitation
     {
 
         protected int max_Speed;
-        protected double engine_Capacity;
+        protected double engine_Capacity;//обєм двигуна
 
         Car() : base()
         {
@@ -119,6 +119,38 @@ namespace Imitation
         public void Print()
         {
             Console.WriteLine($"Price this car = {price}\nMax speed this car ={max_Speed}\nEngine capacity this car  ={engine_Capacity}\nBrent this car:{brend}\nYear of manufacture of this car={year}");
+        }
+    }
+
+
+    class Steamboat: Device
+    {
+        
+        protected double body_Length;//довжина 
+        protected double body_width;//ширина пароплава
+        protected int numb_Passengers;//кількість пасажирів 
+
+        Steamboat() : base()
+        {
+            this.body_Length = 0;
+            this.body_width = 0;
+            this.numb_Passengers = 0;
+        }
+        Steamboat(double body_Length, double body_width,int numb_Passengers, double price, DateTime year, string brend) : base(price, year, brend)
+        {
+            this.body_Length = body_Length;
+            this.body_width = body_width;
+            this.numb_Passengers = numb_Passengers;
+        }
+        public override void Sound()
+        { Console.WriteLine("Sh-sh-sh-sh-shsshshs"); }
+        public override void Show()
+        { Console.WriteLine($"A steaboat  {brend}"); }
+        public override void Desc()
+        { Console.WriteLine("A steamboat is a boat that is propelled primarily by steam power, usually by driving propellers or paddle wheels."); }
+        public void Print()
+        {
+            Console.WriteLine($"Price this steamboat = {price}\nBody length this steamboat ={body_Length}\nBody width this steamboat ={body_width}\nNumb Passengers on this steamboat ={numb_Passengers}\nBrent this steamboat:{brend}\nYear of manufacture of this steamboat={year}");
         }
 
     }
