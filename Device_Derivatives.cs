@@ -8,29 +8,63 @@ namespace Imitation
     {
         protected string name;
         protected double price;
-        protected DateTime day;
+        protected DateTime year;
         protected string brend;
 
-        Device()
+       public  Device()
         {
          this.name = "";
          this.price=0;
-         this.day =new DateTime(0,0,0);
+         this.year =new DateTime(0);
          this.brend = "";
-        }
-        Device(string name , double price, DateTime day , string brend):this()
+        }       
+        public Device(string name , double price, DateTime year, string brend):this()
         {
             this.name= name;
             this.price =price;
-            this.day= day;
+            this.year = year;
             this.brend=brend;
         }
-        protected virtual void Sound() 
+        public Device(double price, DateTime year, string brend) : this()
+        {
+           
+            this.price = price;
+            this.year = year;
+            this.brend = brend;
+        }
+        public virtual void Sound() 
         { Console.WriteLine("Yo !"); }
-        protected virtual void Show()
+        public virtual void Show()
         { Console.WriteLine("A car "); }
-        protected virtual void Desc()
+        public virtual void Desc()
         { Console.WriteLine("A car .... "); }
+
+    }
+
+    class Kettle:Device
+    {
+        
+        protected double volume;//обєм чайника
+        Kettle():base()
+        {
+            this.volume = 0;            
+        }
+        Kettle(double volume,double price, DateTime year, string brend) :base(price,year,brend)
+        {
+            this.volume = volume;
+        }
+        public  override void Sound()
+        { Console.WriteLine("Whistle"); }
+        public override void Show()
+        { Console.WriteLine($"A Kettle {brend}"); }
+        public override void Desc()
+        { Console.WriteLine("A kettle is a vessel with a handle and spout, a lid (although there are exceptions), which is used for brewing tea or boiling water. "); }
+        public void Print()
+        {
+            Console.WriteLine($"Price this kettle = {price}\nVolume this kettle ={volume}\nBrent this kettle:{brend}\nYear of manufacture of this kettle={year}");
+        }
+
+
 
     }
 }
