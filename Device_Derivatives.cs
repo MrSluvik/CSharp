@@ -4,7 +4,44 @@ using System.Text;
 
 namespace Imitation
 {
-    class Device
+
+    partial class Program
+    {
+        static void Main2(string[] args)
+        {
+
+            
+            Kettle first = new Kettle(2.5,205.55,new DateTime(2022),"kuch");
+            Microwave second = new Microwave("Розмороження , Захист від дітей...",6,200, new DateTime(2022),"Sumsung");
+            Car three = new Car(2.2,220,10000, new DateTime(2021),"BMW");
+            Steamboat four = new Steamboat(91, 14.5, 200,30000, new DateTime(1981),"Kiyoko");
+
+            first.Sound();
+            first.Show();
+            first.Desc();
+            first.Print();
+
+            second.Sound();
+            second.Show();
+            second.Desc();
+            second.Print();
+
+            three.Sound();
+            three.Show();
+            three.Desc();
+            three.Print();
+
+            four.Sound();
+            four.Show();
+            four.Desc();
+            four.Print();
+        }
+    }
+
+
+
+
+    public class Device
     {
         protected string name;
         protected double price;
@@ -41,17 +78,20 @@ namespace Imitation
 
     }
 
-    class Kettle : Device
+    public class Kettle : Device
     {
 
         protected double volume;//обєм чайника
-        Kettle() : base()
+        public Kettle() : base()
         {
             this.volume = 0;
         }
-        Kettle(double volume, double price, DateTime year, string brend) : base(price, year, brend)
+        public Kettle(double volume, double price, DateTime year, string brend) : base(price, year, brend)
         {
             this.volume = volume;
+            this.price = price;
+            this.year = year;
+            this.brend = brend;
         }
         public override void Sound()
         { Console.WriteLine("Whistle"); }
@@ -65,18 +105,18 @@ namespace Imitation
         }
     }
 
-    class Microwave : Device
+    public class Microwave : Device
     {
 
         private int power_Levels;//кількість рівнів потужності
         private string function;//функції печі  типу розморожування ,захист від дітей 
 
-        Microwave() : base()
+        public Microwave() : base()
         {
             this.power_Levels = 0;
             this.function = "";
         }
-        Microwave(string function, int power_Levels, double price, DateTime year, string brend) : base(price, year, brend)
+        public Microwave(string function, int power_Levels, double price, DateTime year, string brend) : base(price, year, brend)
         {
             this.function = function;
             this.power_Levels = power_Levels;
@@ -94,18 +134,18 @@ namespace Imitation
 
     }
 
-    class Car : Device
+    public class Car : Device
     {
 
         protected int max_Speed;
         protected double engine_Capacity;//обєм двигуна
 
-        Car() : base()
+        public Car() : base()
         {
             this.max_Speed = 0;
             this.engine_Capacity=0;
         }
-        Car(double engine_Capacity, int max_Speed, double price, DateTime year, string brend) : base(price, year, brend)
+        public Car(double engine_Capacity, int max_Speed, double price, DateTime year, string brend) : base(price, year, brend)
         {
             this.max_Speed = max_Speed;
             this.engine_Capacity = engine_Capacity;
@@ -123,20 +163,20 @@ namespace Imitation
     }
 
 
-    class Steamboat: Device
+    public class Steamboat: Device
     {
         
         protected double body_Length;//довжина 
         protected double body_width;//ширина пароплава
         protected int numb_Passengers;//кількість пасажирів 
 
-        Steamboat() : base()
+        public Steamboat() : base()
         {
             this.body_Length = 0;
             this.body_width = 0;
             this.numb_Passengers = 0;
         }
-        Steamboat(double body_Length, double body_width,int numb_Passengers, double price, DateTime year, string brend) : base(price, year, brend)
+        public Steamboat(double body_Length, double body_width,int numb_Passengers, double price, DateTime year, string brend) : base(price, year, brend)
         {
             this.body_Length = body_Length;
             this.body_width = body_width;
