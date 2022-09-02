@@ -7,7 +7,7 @@ namespace Imitation
 
     partial class Program
     {
-        static void Main2(string[] args)
+        static void Main2()
         {
 
             
@@ -94,14 +94,14 @@ namespace Imitation
             this.brend = brend;
         }
         public override void Sound()
-        { Console.WriteLine("Whistle"); }
+        { Console.WriteLine("\nWhistle\n"); }
         public override void Show()
-        { Console.WriteLine($"A Kettle {brend}"); }
+        { Console.WriteLine($"A Kettle {brend}/n"); }
         public override void Desc()
-        { Console.WriteLine("A kettle is a vessel with a handle and spout, a lid (although there are exceptions), which is used for brewing tea or boiling water. "); }
+        { Console.WriteLine("A kettle is a vessel with a handle and spout, a lid (although there are exceptions), which is used for brewing tea or boiling water.\n "); }
         public void Print()
         {
-            Console.WriteLine($"Price this kettle = {price}\nVolume this kettle ={volume}\nBrent this kettle:{brend}\nYear of manufacture of this kettle={year}");
+            Console.WriteLine($"Price this kettle = {price}\nVolume this kettle ={volume}\nBrent this kettle:{brend}\nYear of manufacture of this kettle={year}\n\n\n\n");
         }
     }
 
@@ -122,14 +122,14 @@ namespace Imitation
             this.power_Levels = power_Levels;
         }
         public override void Sound()
-        { Console.WriteLine("Guuuuuuuuuuu-uuuuuu"); }
+        { Console.WriteLine("\nGuuuuuuuuuuu-uuuuuu\n"); }
         public override void Show()
-        { Console.WriteLine($"A Microwave {brend}"); }
+        { Console.WriteLine($"A Microwave {brend}\n"); }
         public override void Desc()
-        { Console.WriteLine("A microwave oven is a household electrical appliance for quick cooking or quick heating of food, as well as for defrosting it."); }
+        { Console.WriteLine("A microwave oven is a household electrical appliance for quick cooking or quick heating of food, as well as for defrosting it.\n"); }
         public void Print()
         {
-            Console.WriteLine($"Price this microwave = {price}\nFunction this microwave ={function}\nPower levels ={power_Levels}\nBrent this microwave:{brend}\nYear of manufacture of this microwave={year}");
+            Console.WriteLine($"Price this microwave = {price}\nFunction this microwave ={function}\nPower levels ={power_Levels}\nBrent this microwave:{brend}\nYear of manufacture of this microwave={year}\n\n\n\n");
         }
 
     }
@@ -151,14 +151,14 @@ namespace Imitation
             this.engine_Capacity = engine_Capacity;
         }
         public override void Sound()
-        { Console.WriteLine("Gu-Gu-gu"); }
+        { Console.WriteLine("\nGu-Gu-gu\n"); }
         public override void Show()
-        { Console.WriteLine($"A car  {brend}"); }
+        { Console.WriteLine($"A car  {brend}\n"); }
         public override void Desc()
-        { Console.WriteLine("A car is a self-propelled wheeled vehicle that is driven by an engine installed in it and is intended for the transportation of people, cargo."); }
+        { Console.WriteLine("A car is a self-propelled wheeled vehicle that is driven by an engine installed in it and is intended for the transportation of people, cargo.\n"); }
         public void Print()
         {
-            Console.WriteLine($"Price this car = {price}\nMax speed this car ={max_Speed}\nEngine capacity this car  ={engine_Capacity}\nBrent this car:{brend}\nYear of manufacture of this car={year}");
+            Console.WriteLine($"Price this car = {price}\nMax speed this car ={max_Speed}\nEngine capacity this car  ={engine_Capacity}\nBrent this car:{brend}\nYear of manufacture of this car={year}\n\n\n\n");
         }
     }
 
@@ -183,14 +183,14 @@ namespace Imitation
             this.numb_Passengers = numb_Passengers;
         }
         public override void Sound()
-        { Console.WriteLine("Sh-sh-sh-sh-shsshshs"); }
+        { Console.WriteLine("\n\nSh-sh-sh-sh-shsshshs\n"); }
         public override void Show()
-        { Console.WriteLine($"A steaboat  {brend}"); }
+        { Console.WriteLine($"A steaboat {brend}\n"); }
         public override void Desc()
-        { Console.WriteLine("A steamboat is a boat that is propelled primarily by steam power, usually by driving propellers or paddle wheels."); }
+        { Console.WriteLine("A steamboat is a boat that is propelled primarily by steam power, usually by driving propellers or paddle wheels.\n"); }
         public void Print()
         {
-            Console.WriteLine($"Price this steamboat = {price}\nBody length this steamboat ={body_Length}\nBody width this steamboat ={body_width}\nNumb Passengers on this steamboat ={numb_Passengers}\nBrent this steamboat:{brend}\nYear of manufacture of this steamboat={year}");
+            Console.WriteLine($"Price this steamboat = {price}\nBody length this steamboat ={body_Length}\nBody width this steamboat ={body_width}\nNumb Passengers on this steamboat ={numb_Passengers}\nBrent this steamboat:{brend}\nYear of manufacture of this steamboat={year}\n\n\n\n");
         }
 
     }
