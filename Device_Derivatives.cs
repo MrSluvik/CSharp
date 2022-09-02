@@ -11,28 +11,28 @@ namespace Imitation
         protected DateTime year;
         protected string brend;
 
-       public  Device()
+        public Device()
         {
-         this.name = "";
-         this.price=0;
-         this.year =new DateTime(0);
-         this.brend = "";
-        }       
-        public Device(string name , double price, DateTime year, string brend):this()
-        {
-            this.name= name;
-            this.price =price;
-            this.year = year;
-            this.brend=brend;
+            this.name = "";
+            this.price = 0;
+            this.year = new DateTime(0);
+            this.brend = "";
         }
-        public Device(double price, DateTime year, string brend) : this()
+        public Device(string name, double price, DateTime year, string brend) : this()
         {
-           
+            this.name = name;
             this.price = price;
             this.year = year;
             this.brend = brend;
         }
-        public virtual void Sound() 
+        public Device(double price, DateTime year, string brend) : this()
+        {
+
+            this.price = price;
+            this.year = year;
+            this.brend = brend;
+        }
+        public virtual void Sound()
         { Console.WriteLine("Yo !"); }
         public virtual void Show()
         { Console.WriteLine("A car "); }
@@ -41,19 +41,19 @@ namespace Imitation
 
     }
 
-    class Kettle:Device
+    class Kettle : Device
     {
-        
+
         protected double volume;//обєм чайника
-        Kettle():base()
+        Kettle() : base()
         {
-            this.volume = 0;            
+            this.volume = 0;
         }
-        Kettle(double volume,double price, DateTime year, string brend) :base(price,year,brend)
+        Kettle(double volume, double price, DateTime year, string brend) : base(price, year, brend)
         {
             this.volume = volume;
         }
-        public  override void Sound()
+        public override void Sound()
         { Console.WriteLine("Whistle"); }
         public override void Show()
         { Console.WriteLine($"A Kettle {brend}"); }
@@ -63,8 +63,34 @@ namespace Imitation
         {
             Console.WriteLine($"Price this kettle = {price}\nVolume this kettle ={volume}\nBrent this kettle:{brend}\nYear of manufacture of this kettle={year}");
         }
+    }
 
+    class Microwave : Device
+    {
 
+        private int power_Levels;//кількість рівнів потужності
+        private string function;//функції печі  типу розморожування ,захист від дітей 
+
+        Microwave() : base()
+        {
+            this.power_Levels = 0;
+            this.function = "";
+        }
+        Microwave(string function, int power_Levels, double price, DateTime year, string brend) : base(price, year, brend)
+        {
+            this.function = function;
+            this.power_Levels = power_Levels;
+        }
+        public override void Sound()
+        { Console.WriteLine("Beep"); }
+        public override void Show()
+        { Console.WriteLine($"A Microwave {brend}"); }
+        public override void Desc()
+        { Console.WriteLine("A microwave oven is a household electrical appliance for quick cooking or quick heating of food, as well as for defrosting it."); }
+        public void Print()
+        {
+            Console.WriteLine($"Price this microwave = {price}\nFunction this microwave ={function}\nPower levels ={power_Levels}\nBrent this microwave:{brend}\nYear of manufacture of this microwave={year}");
+        }
 
     }
 }
