@@ -93,4 +93,33 @@ namespace Imitation
         }
 
     }
+
+    class Car : Device
+    {
+
+        protected int max_Speed;
+        protected double engine_Capacity;
+
+        Car() : base()
+        {
+            this.max_Speed = 0;
+            this.engine_Capacity=0;
+        }
+        Car(double engine_Capacity, int max_Speed, double price, DateTime year, string brend) : base(price, year, brend)
+        {
+            this.max_Speed = max_Speed;
+            this.engine_Capacity = engine_Capacity;
+        }
+        public override void Sound()
+        { Console.WriteLine("Gu-Gu-gu"); }
+        public override void Show()
+        { Console.WriteLine($"A car  {brend}"); }
+        public override void Desc()
+        { Console.WriteLine("A car is a self-propelled wheeled vehicle that is driven by an engine installed in it and is intended for the transportation of people, cargo."); }
+        public void Print()
+        {
+            Console.WriteLine($"Price this car = {price}\nMax speed this car ={max_Speed}\nEngine capacity this car  ={engine_Capacity}\nBrent this car:{brend}\nYear of manufacture of this car={year}");
+        }
+
+    }
 }
