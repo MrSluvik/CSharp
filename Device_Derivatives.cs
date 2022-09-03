@@ -4,13 +4,10 @@ using System.Text;
 
 namespace Imitation
 {
-
     partial class Program
     {
         static void Main2()
-        {
-
-            
+        {            
             Kettle first = new Kettle(2.5,205.55,new DateTime(2022),"kuch");
             Microwave second = new Microwave("Розмороження , Захист від дітей...",6,200, new DateTime(2022),"Sumsung");
             Car three = new Car(2.2,220,10000, new DateTime(2021),"BMW");
@@ -37,10 +34,6 @@ namespace Imitation
             four.Print();
         }
     }
-
-
-
-
     public class Device
     {
         protected string name;
