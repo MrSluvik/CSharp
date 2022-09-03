@@ -8,29 +8,33 @@ namespace Imitation
     {
         static void Main3()
         { 
-            Violino first = new Violino(4,2000,"Angelo","Стринний");
+            Violino first = new Violino(4,2000,"Angelo","Струнний");
             Tromboneo second = new Tromboneo("Тенор", 2000, "Yamaha Allegro",  "Духовний");
-            Ukulele three = new Ukulele("Концертна", 2200, "Diamond Head DU-250C", "Стринний");
-            Violoncello four = new Violoncello("Контрабас",15000,"Stentor","Стринний-смичковий");
+            Ukulele three = new Ukulele("Концертна", 2200, "Diamond Head DU-250C", "Струнний");
+            Violoncello four = new Violoncello("Контрабас",15000,"Stentor","Струнний-смичковий");
 
             first.Sound();
             first.Show();
             first.Desc();
+            first.History();
             first.Print();
 
             second.Sound();
             second.Show();
-            second.Desc();
+            second.Desc(); 
+            second.History();
             second.Print();
 
             three.Sound();
             three.Show();
-            three.Desc();
+            three.Desc(); 
+            three.History();
             three.Print();
 
             four.Sound();
             four.Show();
-            four.Desc();
+            four.Desc(); 
+            four.History();
             four.Print();
         }
     }
