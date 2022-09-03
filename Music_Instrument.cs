@@ -4,6 +4,37 @@ using System.Text;
 
 namespace Imitation
 {
+    partial class Program
+    {
+        static void Main3()
+        { 
+            Violino first = new Violino(4,2000,"Angelo","Стринний");
+            Tromboneo second = new Tromboneo("Тенор", 2000, "Yamaha Allegro",  "Духовний");
+            Ukulele three = new Ukulele("Концертна", 2200, "Diamond Head DU-250C", "Стринний");
+            Violoncello four = new Violoncello("Контрабас",15000,"Stentor","Стринний-смичковий");
+
+            first.Sound();
+            first.Show();
+            first.Desc();
+            first.Print();
+
+            second.Sound();
+            second.Show();
+            second.Desc();
+            second.Print();
+
+            three.Sound();
+            three.Show();
+            three.Desc();
+            three.Print();
+
+            four.Sound();
+            four.Show();
+            four.Desc();
+            four.Print();
+        }
+    }
+
     public class Music_Instrument
     {
         protected string name;
@@ -38,7 +69,8 @@ namespace Imitation
         public virtual void Desc()
         { Console.WriteLine(""); }
         public virtual void History()
-        { Console.WriteLine(""); }
+        { Console.WriteLine(""); } 
+    }
         public class Violino : Music_Instrument
         {
 
@@ -156,5 +188,5 @@ namespace Imitation
                 Console.WriteLine($"Ціна віолончелі = {price}\nБренд віолончелі:{brend}\nРізновид віолончелі:{varieties}\nТип музичного інструменту:{type_instrument}\n\n\n\n");
             }
         }
-    }
 }
+
