@@ -20,6 +20,7 @@ namespace Imitation
             }
 
             Program.Main2();
+            Program.Main3();
         }
     }
 }
