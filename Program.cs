@@ -35,6 +35,17 @@ namespace OperatorOverload
             WriteLine($"{shop > shop2}");
             WriteLine($"{ shop.ToString()}"); WriteLine();
              WriteLine($"{shop2.ToString()}");
+
+
+
+            ListBooks bokk = new ListBooks(2);
+            bokk[0] = new Books { Name = "Гаррі Потерр і філософський камінь" };
+            bokk.Add("Гаррі Потерр Орден фенікса", 1);
+            WriteLine($"{bokk.FindElement("Гаррі Потерр і філософський камінь\n")}");
+            bokk.Print();
+            WriteLine("\n");
+            bokk.Delete("Гаррі Потерр Орден фенікса");
+            bokk.Print();
         }
     }
 }
